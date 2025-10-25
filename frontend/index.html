@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Career Genie</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="page">
+    <header class="header">
+      <div class="logo">🧠 Smart Career Genie</div>
+      <div class="tag">Web • Database • AI</div>
+    </header>
+
+    <main class="main">
+      <section class="card">
+        <div class="ai-left">
+          <div class="bot">
+            <div class="eye"></div>
+            <div class="glow"></div>
+          </div>
+        </div>
+
+        <div class="form-right">
+          <h2>Hello! I'm your AI Genie ✨</h2>
+          <p id="ai-typing" class="muted"></p>
+
+          <form id="careerForm">
+            <input id="name" placeholder="Your name" required />
+            <input id="email" placeholder="Email (optional)" />
+            <input id="skills" placeholder="Skills (comma separated) e.g. HTML, Python" />
+            <input id="interests" placeholder="Interests (comma separated) e.g. Web, AI" />
+            <button id="submitBtn" type="submit">Ask Genie ✨</button>
+          </form>
+
+          <div id="result" class="result hidden">
+            <h3>Suggested careers</h3>
+            <ul id="suggestionsList"></ul>
+            <button id="saveBtn" class="small">Save again</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <h3>How it helps</h3>
+        <p>Perfect for your final year project — covers frontend, backend, database and a simple AI module.</p>
+      </section>
+    </main>
+
+    <footer class="footer">Made with ❤️ by Charan</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
